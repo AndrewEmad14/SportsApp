@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48B22D632D4C77750087056E /* HomeScreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B22D622D4C77750087056E /* HomeScreenCollectionViewCell.swift */; };
+		48B22D652D4C826E0087056E /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B22D642D4C826E0087056E /* HomeScreenViewController.swift */; };
 		48C7ED4F2D4C458200B8DF34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C7ED4E2D4C458200B8DF34 /* AppDelegate.swift */; };
 		48C7ED512D4C458200B8DF34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C7ED502D4C458200B8DF34 /* SceneDelegate.swift */; };
-		48C7ED532D4C458200B8DF34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C7ED522D4C458200B8DF34 /* ViewController.swift */; };
 		48C7ED562D4C458200B8DF34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48C7ED542D4C458200B8DF34 /* Main.storyboard */; };
 		48C7ED592D4C458200B8DF34 /* SportsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48C7ED572D4C458200B8DF34 /* SportsApp.xcdatamodeld */; };
 		48C7ED5B2D4C458400B8DF34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48C7ED5A2D4C458400B8DF34 /* Assets.xcassets */; };
@@ -39,10 +40,11 @@
 
 /* Begin PBXFileReference section */
 		107B84076900359033C32322 /* Pods_SportsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SportsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48B22D622D4C77750087056E /* HomeScreenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenCollectionViewCell.swift; sourceTree = "<group>"; };
+		48B22D642D4C826E0087056E /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		48C7ED4B2D4C458200B8DF34 /* SportsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48C7ED4E2D4C458200B8DF34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48C7ED502D4C458200B8DF34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		48C7ED522D4C458200B8DF34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		48C7ED552D4C458200B8DF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48C7ED582D4C458200B8DF34 /* SportsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SportsApp.xcdatamodel; sourceTree = "<group>"; };
 		48C7ED5A2D4C458400B8DF34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,9 +95,10 @@
 		48B22D602D4C6BD70087056E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				48C7ED522D4C458200B8DF34 /* ViewController.swift */,
 				48C7ED542D4C458200B8DF34 /* Main.storyboard */,
 				48C7ED5C2D4C458400B8DF34 /* LaunchScreen.storyboard */,
+				48B22D622D4C77750087056E /* HomeScreenCollectionViewCell.swift */,
+				48B22D642D4C826E0087056E /* HomeScreenViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -353,10 +356,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48C7ED532D4C458200B8DF34 /* ViewController.swift in Sources */,
 				48C7ED4F2D4C458200B8DF34 /* AppDelegate.swift in Sources */,
+				48B22D632D4C77750087056E /* HomeScreenCollectionViewCell.swift in Sources */,
 				48C7ED592D4C458200B8DF34 /* SportsApp.xcdatamodeld in Sources */,
 				48C7ED512D4C458200B8DF34 /* SceneDelegate.swift in Sources */,
+				48B22D652D4C826E0087056E /* HomeScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
