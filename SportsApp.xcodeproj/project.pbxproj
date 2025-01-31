@@ -83,6 +83,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48B22D5F2D4C6BCA0087056E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		48B22D602D4C6BD70087056E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				48C7ED522D4C458200B8DF34 /* ViewController.swift */,
+				48C7ED542D4C458200B8DF34 /* Main.storyboard */,
+				48C7ED5C2D4C458400B8DF34 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		48B22D612D4C6BE30087056E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		48C7ED422D4C458200B8DF34 = {
 			isa = PBXGroup;
 			children = (
@@ -108,12 +132,12 @@
 		48C7ED4D2D4C458200B8DF34 /* SportsApp */ = {
 			isa = PBXGroup;
 			children = (
+				48B22D612D4C6BE30087056E /* Presenter */,
+				48B22D602D4C6BD70087056E /* View */,
+				48B22D5F2D4C6BCA0087056E /* Model */,
 				48C7ED4E2D4C458200B8DF34 /* AppDelegate.swift */,
 				48C7ED502D4C458200B8DF34 /* SceneDelegate.swift */,
-				48C7ED522D4C458200B8DF34 /* ViewController.swift */,
-				48C7ED542D4C458200B8DF34 /* Main.storyboard */,
 				48C7ED5A2D4C458400B8DF34 /* Assets.xcassets */,
-				48C7ED5C2D4C458400B8DF34 /* LaunchScreen.storyboard */,
 				48C7ED5F2D4C458400B8DF34 /* Info.plist */,
 				48C7ED572D4C458200B8DF34 /* SportsApp.xcdatamodeld */,
 			);
@@ -151,7 +175,6 @@
 				9CE30D46FD5054D14978356B /* Pods-SportsApp.debug.xcconfig */,
 				ED6552AD37EA98199F40CB21 /* Pods-SportsApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -516,6 +539,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SportsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -544,6 +568,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SportsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
