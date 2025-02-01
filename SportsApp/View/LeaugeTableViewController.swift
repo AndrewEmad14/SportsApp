@@ -6,13 +6,26 @@
 //
 
 import UIKit
-
-class FootBallLeaugeTableViewController: UITableViewController {
+import SDWebImage
+class LeaugeTableViewController: UITableViewController ,ViewInternetRetriveProtocol {
+    var leaugeList : LeaugeList?
+    var sport:Int?
+    func retrieveFromInternet(res: LeaugeList) {
+        DispatchQueue.main.async {
+            self.leaugeList = res
+            self.tableView.reloadData()
+        }
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         let nib = UINib(nibName: "LeaugeTableViewCell", bundle: nil)
         self.tableView.register(nib, forCellReuseIdentifier: "cell")
+        let present = Present()
+        present.view=self
+        guard let temp = sport else {return}
+        present.getData(sportConfig: temp)
    
     }
 
@@ -24,18 +37,24 @@ class FootBallLeaugeTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 12
+       
+        guard let temp = leaugeList?.result.count else{ return 0}
+        return temp
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! LeaugeTableViewCell
-        cell.imageCell.image=UIImage(named: "Football")
-        cell.imageCell.layer.cornerRadius = 40
-        cell.labelCell.text="FoooooootBalllllls"
+       guard var temp = leaugeList?.result[indexPath.row].league_logo else { return cell }
         
-
+        cell.imageCell.sd_setImage(with: URL(string: temp), placeholderImage: UIImage(named: "Football"))
+        cell.imageCell.layer.cornerRadius = 40
+        cell.labelCell.text=leaugeList?.result[indexPath.row].league_name
+        guard let temp = leaugeList?.success else {
+            print("no connection")
+            return cell
+        }
+        print("conncectivity= \(temp)")
         // Configure the cell...
 
         return cell

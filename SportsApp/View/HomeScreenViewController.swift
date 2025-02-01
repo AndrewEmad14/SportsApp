@@ -32,7 +32,8 @@ class HomeScreenViewController: UIViewController ,UICollectionViewDelegate,UICol
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         switch indexPath.row{
         case 0:
-            let view = self.storyboard?.instantiateViewController(withIdentifier: "FootBallView") as! FootBallLeaugeTableViewController
+            let view = self.storyboard?.instantiateViewController(withIdentifier: "LeaugeView") as! LeaugeTableViewController
+            view.sport = 0
             self.navigationController?.pushViewController(view, animated: true)
             
         default:

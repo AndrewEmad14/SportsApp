@@ -93,10 +93,10 @@
             </objects>
             <point key="canvasLocation" x="2211" y="-967"/>
         </scene>
-        <!--Foot Ball Leauge Table View Controller-->
+        <!--Leauge Table View Controller-->
         <scene sceneID="glI-Gb-0E8">
             <objects>
-                <tableViewController storyboardIdentifier="FootBallView" id="5fV-fl-ahY" customClass="FootBallLeaugeTableViewController" customModule="SportsApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="LeaugeView" id="5fV-fl-ahY" customClass="LeaugeTableViewController" customModule="SportsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="CJ9-uO-Iks">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
