@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		489CA49B2D4D8170008B503F /* FootBallLeaugeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489CA49A2D4D8170008B503F /* FootBallLeaugeTableViewController.swift */; };
+		489CA49E2D4D8230008B503F /* LeaugeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489CA49C2D4D8230008B503F /* LeaugeTableViewCell.swift */; };
+		489CA49F2D4D8230008B503F /* LeaugeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 489CA49D2D4D8230008B503F /* LeaugeTableViewCell.xib */; };
+		489CA4A22D4D988D008B503F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 489CA4A02D4D988D008B503F /* Main.storyboard */; };
 		48B22D632D4C77750087056E /* HomeScreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B22D622D4C77750087056E /* HomeScreenCollectionViewCell.swift */; };
 		48B22D652D4C826E0087056E /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B22D642D4C826E0087056E /* HomeScreenViewController.swift */; };
 		48C7ED4F2D4C458200B8DF34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C7ED4E2D4C458200B8DF34 /* AppDelegate.swift */; };
 		48C7ED512D4C458200B8DF34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C7ED502D4C458200B8DF34 /* SceneDelegate.swift */; };
-		48C7ED562D4C458200B8DF34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48C7ED542D4C458200B8DF34 /* Main.storyboard */; };
 		48C7ED592D4C458200B8DF34 /* SportsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48C7ED572D4C458200B8DF34 /* SportsApp.xcdatamodeld */; };
 		48C7ED5B2D4C458400B8DF34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48C7ED5A2D4C458400B8DF34 /* Assets.xcassets */; };
 		48C7ED5E2D4C458400B8DF34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48C7ED5C2D4C458400B8DF34 /* LaunchScreen.storyboard */; };
@@ -40,12 +43,15 @@
 
 /* Begin PBXFileReference section */
 		107B84076900359033C32322 /* Pods_SportsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SportsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		489CA49A2D4D8170008B503F /* FootBallLeaugeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootBallLeaugeTableViewController.swift; sourceTree = "<group>"; };
+		489CA49C2D4D8230008B503F /* LeaugeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaugeTableViewCell.swift; sourceTree = "<group>"; };
+		489CA49D2D4D8230008B503F /* LeaugeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeaugeTableViewCell.xib; sourceTree = "<group>"; };
+		489CA4A12D4D988D008B503F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48B22D622D4C77750087056E /* HomeScreenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenCollectionViewCell.swift; sourceTree = "<group>"; };
 		48B22D642D4C826E0087056E /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		48C7ED4B2D4C458200B8DF34 /* SportsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48C7ED4E2D4C458200B8DF34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48C7ED502D4C458200B8DF34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		48C7ED552D4C458200B8DF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48C7ED582D4C458200B8DF34 /* SportsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SportsApp.xcdatamodel; sourceTree = "<group>"; };
 		48C7ED5A2D4C458400B8DF34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48C7ED5D2D4C458400B8DF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -95,10 +101,13 @@
 		48B22D602D4C6BD70087056E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				48C7ED542D4C458200B8DF34 /* Main.storyboard */,
 				48C7ED5C2D4C458400B8DF34 /* LaunchScreen.storyboard */,
+				489CA4A02D4D988D008B503F /* Main.storyboard */,
 				48B22D622D4C77750087056E /* HomeScreenCollectionViewCell.swift */,
 				48B22D642D4C826E0087056E /* HomeScreenViewController.swift */,
+				489CA49A2D4D8170008B503F /* FootBallLeaugeTableViewController.swift */,
+				489CA49C2D4D8230008B503F /* LeaugeTableViewCell.swift */,
+				489CA49D2D4D8230008B503F /* LeaugeTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -289,7 +298,8 @@
 			files = (
 				48C7ED5E2D4C458400B8DF34 /* LaunchScreen.storyboard in Resources */,
 				48C7ED5B2D4C458400B8DF34 /* Assets.xcassets in Resources */,
-				48C7ED562D4C458200B8DF34 /* Main.storyboard in Resources */,
+				489CA49F2D4D8230008B503F /* LeaugeTableViewCell.xib in Resources */,
+				489CA4A22D4D988D008B503F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +369,8 @@
 				48C7ED4F2D4C458200B8DF34 /* AppDelegate.swift in Sources */,
 				48B22D632D4C77750087056E /* HomeScreenCollectionViewCell.swift in Sources */,
 				48C7ED592D4C458200B8DF34 /* SportsApp.xcdatamodeld in Sources */,
+				489CA49E2D4D8230008B503F /* LeaugeTableViewCell.swift in Sources */,
+				489CA49B2D4D8170008B503F /* FootBallLeaugeTableViewController.swift in Sources */,
 				48C7ED512D4C458200B8DF34 /* SceneDelegate.swift in Sources */,
 				48B22D652D4C826E0087056E /* HomeScreenViewController.swift in Sources */,
 			);
@@ -397,10 +409,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		48C7ED542D4C458200B8DF34 /* Main.storyboard */ = {
+		489CA4A02D4D988D008B503F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				48C7ED552D4C458200B8DF34 /* Base */,
+				489CA4A12D4D988D008B503F /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
