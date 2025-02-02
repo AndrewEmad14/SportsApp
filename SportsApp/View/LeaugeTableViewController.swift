@@ -25,7 +25,8 @@ class LeaugeTableViewController: UITableViewController ,ViewInternetRetriveProto
         let present = Present()
         present.view=self
         guard let temp = sport else {return}
-        present.getData(sportConfig: temp)
+       
+        present.getDataFromNetwork(sportConfig: temp ,urlString: URLEnums.FootBallLeauge.rawValue)
    
     }
 
@@ -45,22 +46,33 @@ class LeaugeTableViewController: UITableViewController ,ViewInternetRetriveProto
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! LeaugeTableViewCell
-       guard var temp = leaugeList?.result[indexPath.row].league_logo else { return cell }
+        guard let temp = leaugeList?.result[indexPath.row].league_logo else { return cell }
         
         cell.imageCell.sd_setImage(with: URL(string: temp), placeholderImage: UIImage(named: "Football"))
         cell.imageCell.layer.cornerRadius = 40
         cell.labelCell.text=leaugeList?.result[indexPath.row].league_name
-        guard let temp = leaugeList?.success else {
-            print("no connection")
-            return cell
-        }
-        print("conncectivity= \(temp)")
+        guard let temp = leaugeList?.success else {return cell}
+     
         // Configure the cell...
 
         return cell
     }
-    
-
+    //LeaugeDetailsView
+    override func tableView(_ tableView: UITableView, performPrimaryActionForRowAt indexPath: IndexPath) {
+        let view = self.storyboard?.instantiateViewController(withIdentifier: "LeaugeDetailsView") as! LeaugeDetailsCollectionViewController
+        
+        if let tempLogo = leaugeList?.result[indexPath.row].league_logo{
+            view.currentLeauge.logo=tempLogo
+        }else{
+            view.currentLeauge.logo=""
+        }
+        
+        guard let tempName = leaugeList?.result[indexPath.row].league_name else {return}
+        guard let tempKey = leaugeList?.result[indexPath.row].league_key else {return}
+        view.currentLeauge.name = tempName
+        view.currentLeauge.id = Int64(tempKey)
+        self.navigationController?.pushViewController(view, animated: true)
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -96,14 +108,7 @@ class LeaugeTableViewController: UITableViewController ,ViewInternetRetriveProto
     }
     */
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+  
 
 }

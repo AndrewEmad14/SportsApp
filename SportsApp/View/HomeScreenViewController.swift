@@ -15,6 +15,7 @@ class HomeScreenViewController: UIViewController ,UICollectionViewDelegate,UICol
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return numberOfSections
     }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return numberOfRows
     }
@@ -29,6 +30,7 @@ class HomeScreenViewController: UIViewController ,UICollectionViewDelegate,UICol
         cell.homeCellLabel.text=imgList[indexPath.row]
         return cell
     }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         switch indexPath.row{
         case 0:
@@ -40,6 +42,7 @@ class HomeScreenViewController: UIViewController ,UICollectionViewDelegate,UICol
             return
         }
     }
+    
     func setLayout(){
         let layout = UICollectionViewFlowLayout()
       

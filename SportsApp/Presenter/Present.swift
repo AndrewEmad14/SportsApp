@@ -8,10 +8,21 @@
 import Foundation
 class Present{
     var view : ViewInternetRetriveProtocol?
-    func getData(sportConfig : Int){
-        NetworkService.fetchDataFromJSONLeauge(sport: sportConfig) { res in
+    func getDataFromNetwork(sportConfig : Int,urlString : String){
+        NetworkService.fetchDataFromJSONLeauge(sport: sportConfig,urlString: urlString) { res in
             guard let result = res else {print("watashiwa NIL desu");return}
             self.view?.retrieveFromInternet(res: result)
         }
+    }
+    func getDataFromCoreData(){
+        CoreDataService.loadData()
+    }
+    func addDataToCoreDataBase(leaugeDetails : FootBallLeauge){
+        CoreDataService.saveData(leaugeDetails: leaugeDetails)
+
+    }
+    func deleteDataFromCoreDataBase(index:Int){
+        CoreDataService.deleteData(index: index)
+        
     }
 }

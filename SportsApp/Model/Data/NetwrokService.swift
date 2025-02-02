@@ -8,21 +8,10 @@
 import Foundation
 
 class NetworkService {
-    static func fetchDataFromJSONLeauge(sport:Int ,completionHandler : @escaping (LeaugeList?)->Void){
-        var temp :String
-        switch sport{
-        case 0:
-            temp="football"
-        case 1:
-            temp="basketball"
-        case 2:
-            temp="cricket"
-        case 3:
-            temp="tennis"
-        default:
-            temp=""
-        }
-        let url = URL(string: "https://apiv2.allsportsapi.com/\(temp)?met=Leagues&APIkey=2d81e4425a40005f3d1153e7144b2dffb6f3a9af4bb958819e938c69bd524dd6")
+ 
+    static func fetchDataFromJSONLeauge(sport:Int,urlString : String ,completionHandler : @escaping (LeaugeList?)->Void){
+       
+        let url = URL(string: urlString)
         guard let newUrl = url else{return}
         let request = URLRequest(url: newUrl)
         let session = URLSession(configuration: .default)
