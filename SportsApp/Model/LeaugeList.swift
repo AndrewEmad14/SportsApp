@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct LeaugeList :Decodable{
+struct LeaugeList :Decodable,DataModel{
     var result:[Leauge]
     var success:Int
     

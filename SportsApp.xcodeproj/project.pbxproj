@@ -14,12 +14,13 @@
 		489CA4A42D4E2E43008B503F /* LeaugeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489CA4A32D4E2E43008B503F /* LeaugeList.swift */; };
 		489CA4A72D4E3210008B503F /* NetwrokService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489CA4A62D4E3210008B503F /* NetwrokService.swift */; };
 		489CA4A92D4E346E008B503F /* Present.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489CA4A82D4E346E008B503F /* Present.swift */; };
-		489CA4AB2D4E3750008B503F /* protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489CA4AA2D4E3750008B503F /* protocols.swift */; };
+		489CA4AB2D4E3750008B503F /* protocolsForView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489CA4AA2D4E3750008B503F /* protocolsForView.swift */; };
 		48ABA18C2D4FBBCB00E28B8F /* FootBallCoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ABA18B2D4FBBCB00E28B8F /* FootBallCoreDataModel.swift */; };
 		48ABA18E2D4FBCC000E28B8F /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ABA18D2D4FBCC000E28B8F /* CoreDataService.swift */; };
 		48ABA1922D4FBDDA00E28B8F /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ABA1912D4FBDDA00E28B8F /* FavoritesTableViewController.swift */; };
 		48ABA1942D4FBEEE00E28B8F /* LeaugeDetailsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ABA1932D4FBEEE00E28B8F /* LeaugeDetailsCollectionViewController.swift */; };
 		48ABA1962D4FE18F00E28B8F /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ABA1952D4FE18F00E28B8F /* Enums.swift */; };
+		48ABA1982D4FEC7200E28B8F /* protocolsForModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ABA1972D4FEC7200E28B8F /* protocolsForModels.swift */; };
 		48B22D632D4C77750087056E /* HomeScreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B22D622D4C77750087056E /* HomeScreenCollectionViewCell.swift */; };
 		48B22D652D4C826E0087056E /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B22D642D4C826E0087056E /* HomeScreenViewController.swift */; };
 		48C7ED4F2D4C458200B8DF34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C7ED4E2D4C458200B8DF34 /* AppDelegate.swift */; };
@@ -59,12 +60,13 @@
 		489CA4A32D4E2E43008B503F /* LeaugeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaugeList.swift; sourceTree = "<group>"; };
 		489CA4A62D4E3210008B503F /* NetwrokService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetwrokService.swift; sourceTree = "<group>"; };
 		489CA4A82D4E346E008B503F /* Present.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Present.swift; sourceTree = "<group>"; };
-		489CA4AA2D4E3750008B503F /* protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocols.swift; sourceTree = "<group>"; };
+		489CA4AA2D4E3750008B503F /* protocolsForView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocolsForView.swift; sourceTree = "<group>"; };
 		48ABA18B2D4FBBCB00E28B8F /* FootBallCoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootBallCoreDataModel.swift; sourceTree = "<group>"; };
 		48ABA18D2D4FBCC000E28B8F /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		48ABA1912D4FBDDA00E28B8F /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
 		48ABA1932D4FBEEE00E28B8F /* LeaugeDetailsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaugeDetailsCollectionViewController.swift; sourceTree = "<group>"; };
 		48ABA1952D4FE18F00E28B8F /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		48ABA1972D4FEC7200E28B8F /* protocolsForModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocolsForModels.swift; sourceTree = "<group>"; };
 		48B22D622D4C77750087056E /* HomeScreenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenCollectionViewCell.swift; sourceTree = "<group>"; };
 		48B22D642D4C826E0087056E /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		48C7ED4B2D4C458200B8DF34 /* SportsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +126,7 @@
 				489CA4A52D4E31EA008B503F /* Data */,
 				489CA4A32D4E2E43008B503F /* LeaugeList.swift */,
 				48ABA18B2D4FBBCB00E28B8F /* FootBallCoreDataModel.swift */,
+				48ABA1972D4FEC7200E28B8F /* protocolsForModels.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -138,7 +141,7 @@
 				489CA49A2D4D8170008B503F /* LeaugeTableViewController.swift */,
 				489CA49C2D4D8230008B503F /* LeaugeTableViewCell.swift */,
 				489CA49D2D4D8230008B503F /* LeaugeTableViewCell.xib */,
-				489CA4AA2D4E3750008B503F /* protocols.swift */,
+				489CA4AA2D4E3750008B503F /* protocolsForView.swift */,
 				48ABA1912D4FBDDA00E28B8F /* FavoritesTableViewController.swift */,
 				48ABA1932D4FBEEE00E28B8F /* LeaugeDetailsCollectionViewController.swift */,
 				48ABA1952D4FE18F00E28B8F /* Enums.swift */,
@@ -411,10 +414,11 @@
 				48C7ED592D4C458200B8DF34 /* SportsApp.xcdatamodeld in Sources */,
 				489CA49E2D4D8230008B503F /* LeaugeTableViewCell.swift in Sources */,
 				489CA49B2D4D8170008B503F /* LeaugeTableViewController.swift in Sources */,
-				489CA4AB2D4E3750008B503F /* protocols.swift in Sources */,
+				489CA4AB2D4E3750008B503F /* protocolsForView.swift in Sources */,
 				489CA4A72D4E3210008B503F /* NetwrokService.swift in Sources */,
 				48C7ED512D4C458200B8DF34 /* SceneDelegate.swift in Sources */,
 				48ABA1942D4FBEEE00E28B8F /* LeaugeDetailsCollectionViewController.swift in Sources */,
+				48ABA1982D4FEC7200E28B8F /* protocolsForModels.swift in Sources */,
 				489CA4A42D4E2E43008B503F /* LeaugeList.swift in Sources */,
 				48B22D652D4C826E0087056E /* HomeScreenViewController.swift in Sources */,
 			);

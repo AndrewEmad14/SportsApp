@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct FootBallCoreDataModel{
+struct FootBallCoreDataModel : DataModel{
     var name:String?
     var logo:String?
     var id : Int64?
