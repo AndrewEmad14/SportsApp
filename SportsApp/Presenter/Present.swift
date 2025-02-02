@@ -8,8 +8,8 @@
 import Foundation
 class Present{
     var view : ViewInternetRetriveProtocol?
-    func getDataFromNetwork(sportConfig : Int,urlString : String){
-        NetworkService.fetchDataFromJSONLeauge(sport: sportConfig,urlString: urlString) { res in
+    func getDataFromNetwork(urlString : String){
+        NetworkService.fetchDataFromJSONLeauge(urlString: urlString) { res in
             guard let result = res else {print("watashiwa NIL desu");return}
             self.view?.retrieveFromInternet(res: result)
         }

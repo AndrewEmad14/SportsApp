@@ -24,9 +24,9 @@ class LeaugeTableViewController: UITableViewController ,ViewInternetRetriveProto
         self.tableView.register(nib, forCellReuseIdentifier: "cell")
         let present = Present()
         present.view=self
-        guard let temp = sport else {return}
+     
        
-        present.getDataFromNetwork(sportConfig: temp ,urlString: URLEnums.FootBallLeauge.rawValue)
+        present.getDataFromNetwork(urlString: URLEnums.FootBallLeauge.rawValue)
    
     }
 
