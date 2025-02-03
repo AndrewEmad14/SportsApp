@@ -7,12 +7,14 @@
 
 import UIKit
 import SDWebImage
+import Reachability
 class LeaugeTableViewController: UITableViewController ,ViewInternetRetriveProtocol {
     var leaugeList : LeaugeList?
     var sport:Int?
-    func retrieveFromInternet(res: LeaugeList) {
+    let reachability = try! Reachability()
+    func retrieveFromInternet(res: DataModel) {
         DispatchQueue.main.async {
-            self.leaugeList = res
+            self.leaugeList = res as? LeaugeList
             self.tableView.reloadData()
         }
     }
@@ -23,10 +25,27 @@ class LeaugeTableViewController: UITableViewController ,ViewInternetRetriveProto
         let nib = UINib(nibName: "LeaugeTableViewCell", bundle: nil)
         self.tableView.register(nib, forCellReuseIdentifier: "cell")
         let present = Present()
-        present.view=self
-     
+        present.retriveFromInternet=self
+        reachability.whenReachable = { reachability in
+            if reachability.connection == .wifi {
+                present.getDataFromNetwork(urlString: URLEnums.FootBallLeauge.rawValue)
+            }
+        }
+        reachability.whenUnreachable = { _ in
+            let alert = UIAlertController(title: "Alert", message: "Sorry, we couldnt load this page", preferredStyle: UIAlertController.Style.alert)
+            let alertAction = UIAlertAction(title: "Ok", style: .default)
+            alert.addAction(alertAction)
+            self.present(alert, animated: true, completion: nil)
+        }
+
+        do {
+            try reachability.startNotifier()
+        } catch {
+            print("Unable to start notifier")
+        }
+
        
-        present.getDataFromNetwork(urlString: URLEnums.FootBallLeauge.rawValue)
+       
    
     }
 
@@ -51,9 +70,9 @@ class LeaugeTableViewController: UITableViewController ,ViewInternetRetriveProto
         cell.imageCell.sd_setImage(with: URL(string: temp), placeholderImage: UIImage(named: "Football"))
         cell.imageCell.layer.cornerRadius = 40
         cell.labelCell.text=leaugeList?.result[indexPath.row].league_name
-        guard let temp = leaugeList?.success else {return cell}
+       
      
-        // Configure the cell...
+    
 
         return cell
     }

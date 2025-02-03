@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import Reachability
 class HomeScreenViewController: UIViewController ,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     
     let numberOfSections = 1
     let numberOfRows = 4
     var imgList : [String]=[]
+   
     @IBOutlet weak var collectionView: UICollectionView!
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return numberOfSections

@@ -9,7 +9,7 @@ import Foundation
 
 class NetworkService {
  
-    static func fetchDataFromJSONLeauge(urlString : String ,completionHandler : @escaping (LeaugeList?)->Void){
+    static func fetchDataFromJSONLeauge(urlString : String ,completionHandler : @escaping (DataModel?)->Void){
        
         let url = URL(string: urlString)
         guard let newUrl = url else{return}

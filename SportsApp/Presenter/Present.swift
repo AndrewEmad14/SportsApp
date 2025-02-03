@@ -7,22 +7,27 @@
 
 import Foundation
 class Present{
-    var view : ViewInternetRetriveProtocol?
+    var retriveFromInternet : ViewInternetRetriveProtocol?
+    var cdLoad: CoreDataLoad?
+    var cdAdd : CoreDataAdd?
+    var cdRemove: CoreDataRemove?
     func getDataFromNetwork(urlString : String){
         NetworkService.fetchDataFromJSONLeauge(urlString: urlString) { res in
             guard let result = res else {print("watashiwa NIL desu");return}
-            self.view?.retrieveFromInternet(res: result)
+            self.retriveFromInternet?.retrieveFromInternet(res: result)
         }
     }
-    func getDataFromCoreData(){
-        CoreDataService.loadData()
+    func getDataFromCoreData()->[CoreDataModel]?{
+        
+        guard let temp = CoreDataService.loadData() else {return nil}
+        return temp
     }
-    func addDataToCoreDataBase(leaugeDetails : FootBallLeauge){
-        CoreDataService.saveData(leaugeDetails: leaugeDetails)
+    func addDataToCoreData(data : CoreDataModel){
+        CoreDataService.saveData(data: data)
 
     }
-    func deleteDataFromCoreDataBase(index:Int){
-        CoreDataService.deleteData(index: index)
+    func removeDataFromCoreData(data : CoreDataModel){
+        CoreDataService.removeData(data : data)
         
     }
 }
