@@ -8,14 +8,14 @@
 import Foundation
 
 
-struct LeaugeList :Decodable,DataModel{
-    var result:[Leauge]
-    var success:Int
+class LeaugeList :Decodable{
+    var result:[Leauge]?
+    var success:Int?
     
 }
 
-struct Leauge :Decodable{
-    var league_key : Int
-    var league_name : String
+class Leauge :Decodable {
+    var league_key : Int?
+    var league_name : String?
     var league_logo : String?
 }

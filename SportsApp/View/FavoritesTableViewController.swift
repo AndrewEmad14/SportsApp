@@ -10,7 +10,7 @@ import UIKit
 class FavoritesTableViewController: UITableViewController , CoreDataLoad,CoreDataRemove{
   
     
-    var coreDataList : [CoreDataModel]=[]
+    var coreDataList : [Leauge]=[]
     let present = Present()
     func loadFromCoreData() {
         guard let temp = present.getDataFromCoreData() else {return}
@@ -18,7 +18,7 @@ class FavoritesTableViewController: UITableViewController , CoreDataLoad,CoreDat
         tableView.reloadData()
     }
     
-    func removeFromCoreData(data: CoreDataModel) {
+    func removeFromCoreData(data: Leauge) {
         present.removeDataFromCoreData(data: data)
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -50,11 +50,11 @@ class FavoritesTableViewController: UITableViewController , CoreDataLoad,CoreDat
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! LeaugeTableViewCell
-        guard let temp = coreDataList[indexPath.row].logo else { return cell }
+        guard let temp = coreDataList[indexPath.row].league_logo else { return cell }
         
         cell.imageCell.sd_setImage(with: URL(string: temp), placeholderImage: UIImage(named: "Football"))
         cell.imageCell.layer.cornerRadius = 40
-        cell.labelCell.text=coreDataList[indexPath.row].name
+        cell.labelCell.text=coreDataList[indexPath.row].league_name
 
         return cell
     }

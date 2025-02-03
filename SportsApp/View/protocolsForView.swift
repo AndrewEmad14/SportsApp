@@ -8,16 +8,17 @@
 import Foundation
 
 protocol ViewInternetRetriveProtocol{
-    func retrieveFromInternet(res: DataModel)
+    func retrieveFromInternet(res: LeaugeList)
+ 
 }
 protocol CoreDataLoad{
     func loadFromCoreData()
 }
 protocol CoreDataAdd{
-    func AddToCoreData(data: CoreDataModel)
+    func AddToCoreData(data: Leauge)
 }
 protocol CoreDataRemove{
-    func removeFromCoreData(data: CoreDataModel)
+    func removeFromCoreData(data: Leauge)
 }
 
 

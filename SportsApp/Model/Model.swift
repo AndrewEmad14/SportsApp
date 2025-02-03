@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol DataModel{
+ class DataModel: Decodable{
     
 }
