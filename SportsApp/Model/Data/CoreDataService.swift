@@ -58,7 +58,7 @@ class CoreDataService{
         do{
             managedLeauges = try managedContext.fetch(fetchRequest)
             for i in managedLeauges{
-                var tempLeauge = Leauge()
+                let tempLeauge = Leauge()
                 tempLeauge.league_key = i.value(forKey: "id") as? Int
                 tempLeauge.league_logo = i.value(forKey: "logo") as? String
                 tempLeauge.league_name = i.value(forKey: "name") as? String

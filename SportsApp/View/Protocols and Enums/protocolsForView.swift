@@ -13,6 +13,7 @@ protocol ViewInternetRetriveLeaugeProtocol{
 }
 protocol ViewInternetRetriveLeaugeDetailsProtocol{
     func retrieveFromInternet(res: LeaugeDetailsList)
+    func retrieveFromInternetTeam(res: TeamList)
 }
 protocol CoreDataLoad{
     func loadFromCoreData()

@@ -17,6 +17,6 @@ enum URLEnums:String{
     case CricketLeaugeDetails = "https://apiv2.allsportsapi.com/cricket/?met=Fixtures"
     case TennisLeaugeDetails = "https://apiv2.allsportsapi.com/tennis/?met=Fixtures"
     case LeagueDetailsAPIKey =  "&APIkey=2d81e4425a40005f3d1153e7144b2dffb6f3a9af4bb958819e938c69bd524dd6"
-    
+    case FootBallTeams = "https://apiv2.allsportsapi.com/football/?&met=Teams"
        
 }

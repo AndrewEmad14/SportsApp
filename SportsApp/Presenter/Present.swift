@@ -7,7 +7,8 @@
 
 import Foundation
 class Present{
-    var retriveFromInternet : ViewInternetRetriveProtocol?
+    var presenterLeaugeProtocol : ViewInternetRetriveLeaugeProtocol?
+    var presenterLeaugeDetailsProtocol : ViewInternetRetriveLeaugeDetailsProtocol?
     var cdLoad: CoreDataLoad?
     var cdAdd : CoreDataAdd?
     var cdRemove: CoreDataRemove?
@@ -17,15 +18,28 @@ class Present{
             bindResultToViewController()
         }
     }
-    func getDataFromNetwork(urlString : String){
+    func getDataFromNetworkLeauge(urlString : String){
         
         NetworkService.sharedInstance.fetchDataFromJSONLeauge(urlString: urlString) { res in
             guard let result = res else {print("watashiwa NIL desu");return}
-            self.retriveFromInternet?.retrieveFromInternet(res: result)
+            self.presenterLeaugeProtocol?.retrieveFromInternet(res: result)
+        }
+    }
+    func getDataFromNetworkLeaugeDetails(urlString : String){
+        
+        NetworkService.sharedInstance.fetchDataFromJSONLeaugeDetails(urlString: urlString) { res in
+            guard let result = res else {print("watashiwa NIL desu");return}
+            self.presenterLeaugeDetailsProtocol?.retrieveFromInternet(res: result)
+        }
+    }
+    func getDataFromNetworkTeamDetails(urlString:String){
+        NetworkService.sharedInstance.fetchDataFromJSONTeam(urlString: urlString) { res in
+            guard let result = res else {print("watashiwa NIL desu");return}
+            self.presenterLeaugeDetailsProtocol?.retrieveFromInternetTeam(res: result)
         }
     }
     func checkNetworkConnection(){
-        NetworkService.sharedInstance.stopMonitor()
+     
         NetworkService.sharedInstance.startMonitor()
         NetworkService.sharedInstance.checkConnection { connection in
             self.presenterConnectionFlag=connection

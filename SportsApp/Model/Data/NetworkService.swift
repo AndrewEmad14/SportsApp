@@ -9,7 +9,7 @@ import Foundation
 import Reachability
 class NetworkService {
    
-     private let reachability = try! Reachability()
+    private  let reachability = try! Reachability()
      static let sharedInstance = NetworkService()
     private init(){
         
@@ -21,18 +21,18 @@ class NetworkService {
             print("Unable to start notifier")
         }
     }
-    func stopMonitor(){
-        reachability.stopNotifier()
-    }
+   
      func checkConnection(completionHandler : @escaping (_ connection:Bool?)->Void){
         
        
         reachability.whenReachable = { reachability in
             if reachability.connection == .wifi {
+                print("i am alive")
                completionHandler(true)
             }
         }
         reachability.whenUnreachable = { _ in
+            print("i amnot alive")
             completionHandler(false)
         }
         
@@ -59,7 +59,7 @@ class NetworkService {
         }
         task.resume()
     }
-    func fetchDataFromJSONLeaugeDetails(urlString : String ,completionHandler : @escaping (LeaugeList?)->Void){
+    func fetchDataFromJSONLeaugeDetails(urlString : String ,completionHandler : @escaping (LeaugeDetailsList?)->Void){
      
       let url = URL(string: urlString)
       guard let newUrl = url else{return}
@@ -68,7 +68,26 @@ class NetworkService {
       let task = session.dataTask(with: request) { data, response, error in
           guard let data = data else{return}
           do{
-              let result = try JSONDecoder().decode(LeaugeList.self, from: data)
+              let result = try JSONDecoder().decode(LeaugeDetailsList.self, from: data)
+              completionHandler(result)
+          }catch{
+              print(error)
+              completionHandler(nil)
+          }
+          
+      }
+      task.resume()
+  }
+    func fetchDataFromJSONTeam(urlString : String ,completionHandler : @escaping (TeamList?)->Void){
+     
+      let url = URL(string: urlString)
+      guard let newUrl = url else{return}
+      let request = URLRequest(url: newUrl)
+      let session = URLSession(configuration: .default)
+      let task = session.dataTask(with: request) { data, response, error in
+          guard let data = data else{return}
+          do{
+              let result = try JSONDecoder().decode(TeamList.self, from: data)
               completionHandler(result)
           }catch{
               print(error)

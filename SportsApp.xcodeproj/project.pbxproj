@@ -15,13 +15,21 @@
 		489CA4A72D4E3210008B503F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489CA4A62D4E3210008B503F /* NetworkService.swift */; };
 		489CA4A92D4E346E008B503F /* Present.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489CA4A82D4E346E008B503F /* Present.swift */; };
 		489CA4AB2D4E3750008B503F /* protocolsForView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489CA4AA2D4E3750008B503F /* protocolsForView.swift */; };
+		489EA7872D50F5F000A68B1F /* LeaugeDetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489EA7852D50F5F000A68B1F /* LeaugeDetailsCollectionViewCell.swift */; };
+		489EA7882D50F5F000A68B1F /* LeaugeDetailsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 489EA7862D50F5F000A68B1F /* LeaugeDetailsCollectionViewCell.xib */; };
+		489EA78A2D511F0200A68B1F /* SectionCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489EA7892D511F0200A68B1F /* SectionCollectionReusableView.swift */; };
 		48ABA18E2D4FBCC000E28B8F /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ABA18D2D4FBCC000E28B8F /* CoreDataService.swift */; };
 		48ABA1922D4FBDDA00E28B8F /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ABA1912D4FBDDA00E28B8F /* FavoritesTableViewController.swift */; };
 		48ABA1942D4FBEEE00E28B8F /* LeaugeDetailsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ABA1932D4FBEEE00E28B8F /* LeaugeDetailsCollectionViewController.swift */; };
 		48ABA1962D4FE18F00E28B8F /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ABA1952D4FE18F00E28B8F /* Enums.swift */; };
-		48ABA19A2D501DCD00E28B8F /* LeaugeListDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ABA1992D501DCD00E28B8F /* LeaugeListDetails.swift */; };
+		48ABA19A2D501DCD00E28B8F /* LeaugeDetailsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48ABA1992D501DCD00E28B8F /* LeaugeDetailsList.swift */; };
 		48B22D632D4C77750087056E /* HomeScreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B22D622D4C77750087056E /* HomeScreenCollectionViewCell.swift */; };
 		48B22D652D4C826E0087056E /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B22D642D4C826E0087056E /* HomeScreenViewController.swift */; };
+		48B595A42D51E93B00D39F2A /* LatestEventsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B595A22D51E93B00D39F2A /* LatestEventsCell.swift */; };
+		48B595A52D51E93B00D39F2A /* LatestEventsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48B595A32D51E93B00D39F2A /* LatestEventsCell.xib */; };
+		48B595A82D51F59400D39F2A /* teamCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B595A62D51F59400D39F2A /* teamCells.swift */; };
+		48B595A92D51F59400D39F2A /* teamCells.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48B595A72D51F59400D39F2A /* teamCells.xib */; };
+		48B595AB2D51F78B00D39F2A /* TeamList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B595AA2D51F78B00D39F2A /* TeamList.swift */; };
 		48C7ED4F2D4C458200B8DF34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C7ED4E2D4C458200B8DF34 /* AppDelegate.swift */; };
 		48C7ED512D4C458200B8DF34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C7ED502D4C458200B8DF34 /* SceneDelegate.swift */; };
 		48C7ED592D4C458200B8DF34 /* SportsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48C7ED572D4C458200B8DF34 /* SportsApp.xcdatamodeld */; };
@@ -60,13 +68,21 @@
 		489CA4A62D4E3210008B503F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		489CA4A82D4E346E008B503F /* Present.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Present.swift; sourceTree = "<group>"; };
 		489CA4AA2D4E3750008B503F /* protocolsForView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocolsForView.swift; sourceTree = "<group>"; };
+		489EA7852D50F5F000A68B1F /* LeaugeDetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaugeDetailsCollectionViewCell.swift; sourceTree = "<group>"; };
+		489EA7862D50F5F000A68B1F /* LeaugeDetailsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeaugeDetailsCollectionViewCell.xib; sourceTree = "<group>"; };
+		489EA7892D511F0200A68B1F /* SectionCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCollectionReusableView.swift; sourceTree = "<group>"; };
 		48ABA18D2D4FBCC000E28B8F /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		48ABA1912D4FBDDA00E28B8F /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
 		48ABA1932D4FBEEE00E28B8F /* LeaugeDetailsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaugeDetailsCollectionViewController.swift; sourceTree = "<group>"; };
 		48ABA1952D4FE18F00E28B8F /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
-		48ABA1992D501DCD00E28B8F /* LeaugeListDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaugeListDetails.swift; sourceTree = "<group>"; };
+		48ABA1992D501DCD00E28B8F /* LeaugeDetailsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaugeDetailsList.swift; sourceTree = "<group>"; };
 		48B22D622D4C77750087056E /* HomeScreenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenCollectionViewCell.swift; sourceTree = "<group>"; };
 		48B22D642D4C826E0087056E /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		48B595A22D51E93B00D39F2A /* LatestEventsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestEventsCell.swift; sourceTree = "<group>"; };
+		48B595A32D51E93B00D39F2A /* LatestEventsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LatestEventsCell.xib; sourceTree = "<group>"; };
+		48B595A62D51F59400D39F2A /* teamCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teamCells.swift; sourceTree = "<group>"; };
+		48B595A72D51F59400D39F2A /* teamCells.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = teamCells.xib; sourceTree = "<group>"; };
+		48B595AA2D51F78B00D39F2A /* TeamList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamList.swift; sourceTree = "<group>"; };
 		48C7ED4B2D4C458200B8DF34 /* SportsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48C7ED4E2D4C458200B8DF34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48C7ED502D4C458200B8DF34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,9 +137,8 @@
 		48B22D5F2D4C6BCA0087056E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				48B595A12D51CD3300D39F2A /* DataModels */,
 				489CA4A52D4E31EA008B503F /* Data */,
-				489CA4A32D4E2E43008B503F /* LeaugeList.swift */,
-				48ABA1992D501DCD00E28B8F /* LeaugeListDetails.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -131,17 +146,13 @@
 		48B22D602D4C6BD70087056E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				48B595A02D51CCF400D39F2A /* LeaugeDetails */,
+				48B5959F2D51CCD900D39F2A /* Protocols and Enums */,
+				48B5959E2D51CCC700D39F2A /* Favorites */,
+				48B5959D2D51CB6200D39F2A /* Leauge */,
+				48B5959C2D51CB0100D39F2A /* HomeScreen */,
 				48C7ED5C2D4C458400B8DF34 /* LaunchScreen.storyboard */,
 				489CA4A02D4D988D008B503F /* Main.storyboard */,
-				48B22D622D4C77750087056E /* HomeScreenCollectionViewCell.swift */,
-				48B22D642D4C826E0087056E /* HomeScreenViewController.swift */,
-				489CA49A2D4D8170008B503F /* LeaugeTableViewController.swift */,
-				489CA49C2D4D8230008B503F /* LeaugeTableViewCell.swift */,
-				489CA49D2D4D8230008B503F /* LeaugeTableViewCell.xib */,
-				489CA4AA2D4E3750008B503F /* protocolsForView.swift */,
-				48ABA1912D4FBDDA00E28B8F /* FavoritesTableViewController.swift */,
-				48ABA1932D4FBEEE00E28B8F /* LeaugeDetailsCollectionViewController.swift */,
-				48ABA1952D4FE18F00E28B8F /* Enums.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -152,6 +163,75 @@
 				489CA4A82D4E346E008B503F /* Present.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		48B5959C2D51CB0100D39F2A /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				48B22D642D4C826E0087056E /* HomeScreenViewController.swift */,
+				48B22D622D4C77750087056E /* HomeScreenCollectionViewCell.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		48B5959D2D51CB6200D39F2A /* Leauge */ = {
+			isa = PBXGroup;
+			children = (
+				489CA49A2D4D8170008B503F /* LeaugeTableViewController.swift */,
+				489CA49C2D4D8230008B503F /* LeaugeTableViewCell.swift */,
+				489CA49D2D4D8230008B503F /* LeaugeTableViewCell.xib */,
+			);
+			path = Leauge;
+			sourceTree = "<group>";
+		};
+		48B5959E2D51CCC700D39F2A /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				48ABA1912D4FBDDA00E28B8F /* FavoritesTableViewController.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		48B5959F2D51CCD900D39F2A /* Protocols and Enums */ = {
+			isa = PBXGroup;
+			children = (
+				48ABA1952D4FE18F00E28B8F /* Enums.swift */,
+				489CA4AA2D4E3750008B503F /* protocolsForView.swift */,
+			);
+			path = "Protocols and Enums";
+			sourceTree = "<group>";
+		};
+		48B595A02D51CCF400D39F2A /* LeaugeDetails */ = {
+			isa = PBXGroup;
+			children = (
+				48B595AC2D51F9EB00D39F2A /* Cells */,
+				48ABA1932D4FBEEE00E28B8F /* LeaugeDetailsCollectionViewController.swift */,
+			);
+			path = LeaugeDetails;
+			sourceTree = "<group>";
+		};
+		48B595A12D51CD3300D39F2A /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				489CA4A32D4E2E43008B503F /* LeaugeList.swift */,
+				48ABA1992D501DCD00E28B8F /* LeaugeDetailsList.swift */,
+				48B595AA2D51F78B00D39F2A /* TeamList.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		48B595AC2D51F9EB00D39F2A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				489EA7892D511F0200A68B1F /* SectionCollectionReusableView.swift */,
+				48B595A72D51F59400D39F2A /* teamCells.xib */,
+				48B595A62D51F59400D39F2A /* teamCells.swift */,
+				48B595A32D51E93B00D39F2A /* LatestEventsCell.xib */,
+				48B595A22D51E93B00D39F2A /* LatestEventsCell.swift */,
+				489EA7852D50F5F000A68B1F /* LeaugeDetailsCollectionViewCell.swift */,
+				489EA7862D50F5F000A68B1F /* LeaugeDetailsCollectionViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		48C7ED422D4C458200B8DF34 = {
@@ -332,9 +412,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				48C7ED5E2D4C458400B8DF34 /* LaunchScreen.storyboard in Resources */,
+				48B595A92D51F59400D39F2A /* teamCells.xib in Resources */,
 				48C7ED5B2D4C458400B8DF34 /* Assets.xcassets in Resources */,
 				489CA49F2D4D8230008B503F /* LeaugeTableViewCell.xib in Resources */,
+				48B595A52D51E93B00D39F2A /* LatestEventsCell.xib in Resources */,
 				489CA4A22D4D988D008B503F /* Main.storyboard in Resources */,
+				489EA7882D50F5F000A68B1F /* LeaugeDetailsCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,15 +488,20 @@
 				48ABA18E2D4FBCC000E28B8F /* CoreDataService.swift in Sources */,
 				48B22D632D4C77750087056E /* HomeScreenCollectionViewCell.swift in Sources */,
 				48ABA1962D4FE18F00E28B8F /* Enums.swift in Sources */,
-				48ABA19A2D501DCD00E28B8F /* LeaugeListDetails.swift in Sources */,
+				48ABA19A2D501DCD00E28B8F /* LeaugeDetailsList.swift in Sources */,
 				489CA4A92D4E346E008B503F /* Present.swift in Sources */,
 				48ABA1922D4FBDDA00E28B8F /* FavoritesTableViewController.swift in Sources */,
 				48C7ED592D4C458200B8DF34 /* SportsApp.xcdatamodeld in Sources */,
 				489CA49E2D4D8230008B503F /* LeaugeTableViewCell.swift in Sources */,
+				489EA7872D50F5F000A68B1F /* LeaugeDetailsCollectionViewCell.swift in Sources */,
 				489CA49B2D4D8170008B503F /* LeaugeTableViewController.swift in Sources */,
+				48B595AB2D51F78B00D39F2A /* TeamList.swift in Sources */,
 				489CA4AB2D4E3750008B503F /* protocolsForView.swift in Sources */,
+				48B595A42D51E93B00D39F2A /* LatestEventsCell.swift in Sources */,
 				489CA4A72D4E3210008B503F /* NetworkService.swift in Sources */,
+				489EA78A2D511F0200A68B1F /* SectionCollectionReusableView.swift in Sources */,
 				48C7ED512D4C458200B8DF34 /* SceneDelegate.swift in Sources */,
+				48B595A82D51F59400D39F2A /* teamCells.swift in Sources */,
 				48ABA1942D4FBEEE00E28B8F /* LeaugeDetailsCollectionViewController.swift in Sources */,
 				489CA4A42D4E2E43008B503F /* LeaugeList.swift in Sources */,
 				48B22D652D4C826E0087056E /* HomeScreenViewController.swift in Sources */,
