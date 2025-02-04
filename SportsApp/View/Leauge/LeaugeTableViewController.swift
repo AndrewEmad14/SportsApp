@@ -8,7 +8,7 @@
 import UIKit
 import SDWebImage
 import Reachability
-class LeaugeTableViewController: UITableViewController ,ViewInternetRetriveProtocol {
+class LeaugeTableViewController: UITableViewController ,ViewInternetRetriveLeaugeProtocol {
    
     private let present = Present()
     var leaugeList : LeaugeList?
@@ -24,10 +24,11 @@ class LeaugeTableViewController: UITableViewController ,ViewInternetRetriveProto
     
     func ConnectingToTheApi(){
         present.checkNetworkConnection()
+        self.present.getDataFromNetworkLeauge(urlString: URLEnums.FootBallLeauge.rawValue)
         present.bindResultToViewController = { () in
             self.connection = self.present.presenterConnectionFlag!
             if self.connection {
-                self.present.getDataFromNetwork(urlString: URLEnums.FootBallLeauge.rawValue)
+                
             }else{
                 let alert = UIAlertController(title: "Alert", message: "Sorry, we couldnt load this page", preferredStyle: UIAlertController.Style.alert)
                 let alertAction = UIAlertAction(title: "OK", style: .default) { action in
@@ -43,8 +44,8 @@ class LeaugeTableViewController: UITableViewController ,ViewInternetRetriveProto
         super.viewDidLoad()
         let nib = UINib(nibName: "LeaugeTableViewCell", bundle: nil)
         self.tableView.register(nib, forCellReuseIdentifier: "cell")
-        print("man i am dead")
-        present.retriveFromInternet=self
+    
+        present.presenterLeaugeProtocol=self
         ConnectingToTheApi()
    
     }

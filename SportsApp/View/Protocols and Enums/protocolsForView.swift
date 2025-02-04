@@ -7,9 +7,12 @@
 
 import Foundation
 
-protocol ViewInternetRetriveProtocol{
+protocol ViewInternetRetriveLeaugeProtocol{
     func retrieveFromInternet(res: LeaugeList)
  
+}
+protocol ViewInternetRetriveLeaugeDetailsProtocol{
+    func retrieveFromInternet(res: LeaugeDetailsList)
 }
 protocol CoreDataLoad{
     func loadFromCoreData()
